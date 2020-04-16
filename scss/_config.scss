@@ -1,0 +1,86 @@
+$primary-color: #0066cc;
+$secondary-color: #529de8;
+$light-color: #f4f4f4;
+$white-color: #fff;
+$dark-color: #333;
+$danger-color: #bd1010;
+$success-color: #44aa3a;
+$max-width: 1250px;
+
+// Set Text Color Based on Background
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Set Background and Text Color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+//Margin and Padding
+$space-amounts: (1, 2, 3, 4, 5, 6);
+
+@each $space in $space-amounts {
+  // All around margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  // Vertical Margin
+  .m-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  // Bottom Margin
+  .mt-#{$space} {
+    margin-top: #{$space}rem;
+  }
+
+  // Top Margin
+  .mb-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+
+  // All around Padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  // Vertical Padding
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+
+  // Bottom Padding
+  .pb-#{$space} {
+    padding-bottom: #{$space}rem;
+  }
+  // Top Padding
+  .pt-#{$space} {
+    padding-top: #{$space}rem;
+  }
+
+  // Right Padding
+  .pr-#{$space} {
+    padding-right: #{$space}rem;
+  }
+
+  // Left Padding
+  .pl-#{$space} {
+    padding-left: #{$space}rem;
+  }
+}
+
+// Width
+$width-amounts: (10, 20, 30, 40, 50);
+
+@each $width in $width-amounts {
+  .w-#{$width} {
+    width: #{$width}px;
+  }
+}

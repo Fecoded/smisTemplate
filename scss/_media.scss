@@ -1,0 +1,94 @@
+@media (max-width: 900px) {
+  .dashboard {
+    display: grid;
+    grid-template-columns: 5fr;
+
+    &-left {
+      display: none;
+    }
+
+    &-right {
+      .control {
+        grid-template-columns: repeat(2, 2fr);
+      }
+      .info {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .notice {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .student {
+    &-btn {
+      button {
+        font-size: 15px !important;
+        padding: 0.5rem 0.5rem;
+      }
+    }
+  }
+
+  .img-round {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sm-hide {
+    display: flex;
+  }
+
+  nav {
+    background: $dark-color;
+    padding: 2px 2rem;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li a {
+        color: $light-color;
+        padding: 0 1rem;
+
+        .active {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .staff {
+    .form-card {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .student {
+    &-btn {
+      button {
+        font-size: 13px !important;
+        padding: 0.5rem 0.3rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .student {
+    &-btn {
+      button {
+        font-size: 9px !important;
+        padding: 0.5rem 0.4rem !important;
+      }
+    }
+    h2 {
+      font-size: 15px;
+    }
+  }
+}

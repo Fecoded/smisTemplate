@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Dashboard | School Management</title>
+  </head>
+  <body>
+    <nav class="sm-hide">
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fas fa-tachometer-alt"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="staff.html">
+            <i class="fas fa-chalkboard-teacher"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="student.html">
+            <i class="fas fa-users"> </i>
+          </a>
+        </li>
+        <!-- <li>
+          <a href="parent.html">
+            <i class="fas fa-user-tie"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="class.html">
+            <i class="fas fa-calendar-week"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="payment.html">
+            <i class="fas fa-book"> </i>
+          </a>
+        </li> -->
+        <li>
+          <a href="report.html">
+            <i class="fab fa-readme"> </i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="dashboard-container">
+      <div class="dashboard">
+        <div class="dashboard-left bg-dark">
+          <div class="center">
+            <h2>SMIS Dashboard</h2>
+            <img src="img/IMG.png" class="img-round" alt="img" />
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">
+                <i class="fas fa-tachometer-alt"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="staff.html"
+                ><i class="fas fa-chalkboard-teacher"></i> Staff</a
+              >
+            </li>
+            <li>
+              <a href="student.html"><i class="fas fa-users"></i> Student</a>
+            </li>
+            <li>
+              <a href="parent.html" class="current"
+                ><i class="fas fa-user-tie"></i> &nbsp;Parent</a
+              >
+            </li>
+            <li>
+              <a href="class.html"
+                ><i class="fas fa-calendar-week"></i> &nbsp;Class</a
+              >
+            </li>
+            <li>
+              <a href="payment.html"
+                ><i class="fas fa-money-bill-alt"></i> Payment</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-users"></i> Report</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dashboard-right bg-secondary">
+          <div class="dashboard-space pb-1">
+            <div class="flex">
+              <h2 class="pr-1">Parent Details</h2>
+              <input type="text" placeholder="Search..." class="search" />
+            </div>
+            <button class="btn">Export to Excel</button>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>Occupation</th>
+                <th>Email</th>
+                <th>Phone One</th>
+                <th>Phone Two</th>
+                <th>Home Address</th>
+                <th>Work Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Doe</td>
+                <td>Fashion Designer</td>
+                <td>Johndeo@gmail.com</td>
+                <td>444-444-4444</td>
+                <td>444-444-4444</td>
+                <td>Ikeja, Lagos State, Nigeria</td>
+                <td>Lekki, Lagos State, Nigeria</td>
+              </tr>
+              <tr>
+                <td>Sam Smith</td>
+                <td>Graphic Designer</td>
+                <td>smithsam@gmail.com</td>
+                <td>777-777-7777</td>
+                <td>555-555-555</td>
+                <td>Benin, Edo State</td>
+                <td>Benin, Edo State</td>
+              </tr>
+              <tr>
+                <td>Toju Nathaniel</td>
+                <td>Web Developer</td>
+                <td>tojuofe@gmail.com</td>
+                <td>777-777-7777</td>
+                <td>555-555-555</td>
+                <td>Benin, Edo State</td>
+                <td>Benin, Edo State</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

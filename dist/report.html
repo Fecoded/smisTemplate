@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Dashboard | School Management</title>
+  </head>
+  <body>
+    <nav class="sm-hide">
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fas fa-tachometer-alt"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="staff.html">
+            <i class="fas fa-chalkboard-teacher"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="student.html">
+            <i class="fas fa-users"> </i>
+          </a>
+        </li>
+        <!-- <li>
+          <a href="parent.html">
+            <i class="fas fa-user-tie"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="class.html">
+            <i class="fas fa-calendar-week"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="payment.html">
+            <i class="fas fa-book"> </i>
+          </a>
+        </li> -->
+        <li>
+          <a href="report.html">
+            <i class="fab fa-readme active"> </i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="dashboard-container">
+      <div class="dashboard">
+        <div class="dashboard-left bg-dark">
+          <div class="center">
+            <h2>SMIS Dashboard</h2>
+            <img src="img/IMG.png" class="img-round" alt="img" />
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">
+                <i class="fas fa-tachometer-alt"></i> Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="staff.html"
+                ><i class="fas fa-chalkboard-teacher"></i> Staff</a
+              >
+            </li>
+            <li>
+              <a href="student.html"><i class="fas fa-users"></i> Student</a>
+            </li>
+            <li>
+              <a href="parent.html"
+                ><i class="fas fa-user-tie"></i> &nbsp;Parent</a
+              >
+            </li>
+            <li>
+              <a href="class.html"
+                ><i class="fas fa-calendar-week"></i> &nbsp;Class</a
+              >
+            </li>
+            <li>
+              <a href="payment.html"
+                ><i class="fas fa-money-bill-alt"></i> Payment</a
+              >
+            </li>
+            <li>
+              <a href="report.html" class="current"
+                ><i class="fas fa-users"></i> Report</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dashboard-right bg-secondary">
+          <h2>Create Student Report Details</h2>
+          <div class="staff">
+            <div class="staff-form active">
+              <form>
+                <div class="form-card">
+                  <div class="form-group">
+                    <label for="term">Term</label>
+                    <input type="text" placeholder="Term" />
+                  </div>
+                  <div class="form-group">
+                    <label for="total">Total</label>
+                    <input type="text" placeholder="Total" />
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Name</label>
+                    <select>
+                      <option value="select">Select</option>
+                      <option value="male">John Doe</option>
+                      <option value="Female">Sam Smith</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="positionorgrade">Position or Grade</label>
+                    <input type="text" placeholder="Total" />
+                  </div>
+                  <div class="form-group">
+                    <label for="middlename">Gender</label>
+                    <select>
+                      <option value="male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="teacherremark">Teacher Remark</label>
+                    <input type="text" placeholder="Teacher Remark" />
+                  </div>
+                  <div class="form-group">
+                    <label for="class">Class</label>
+                    <select>
+                      <option value="select">Select</option>
+                      <option value="male">Creche</option>
+                      <option value="Female">Kindergarten</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="headteacherremark">Head Teacher Remark</label>
+                    <input type="text" placeholder="Head Teacher Remark" />
+                  </div>
+                </div>
+                <input type="submit" value="Create Report" class="btn mt-1" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
