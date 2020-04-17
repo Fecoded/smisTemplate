@@ -171,6 +171,16 @@
   }
 }
 
+// Alert
+.alert {
+  padding: 0.7rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  border-radius: 2px;
+  background: #f8a0a7;
+  color: #721c24;
+}
+
 // Background Setting
 .bg {
   &-primary {
