@@ -177,8 +177,18 @@
   margin: 1rem 0;
   opacity: 0.9;
   border-radius: 2px;
-  background: #f8a0a7;
-  color: #721c24;
+  background: $light-color;
+  color: set-text-color($light-color);
+
+  &-success {
+    background: #178002;
+    color: #f4f4f4;
+  }
+
+  &-danger {
+    background: #f8a0a7;
+    color: #721c24;
+  }
 }
 
 // Background Setting
