@@ -19,20 +19,24 @@
   </head>
   <body>
     <nav class="sm-hide">
+      <div class="logo">
+        <h2>Dashboard</h2>
+        <img src="img/IMG.png" class="img-round" alt="img" />
+      </div>
       <ul>
         <li>
           <a href="index.html">
-            <i class="fas fa-tachometer-alt"> </i>
+            <i class="fas fa-tachometer-alt"> </i> Dashboard
           </a>
         </li>
         <li>
           <a href="staff.html">
-            <i class="fas fa-chalkboard-teacher"> </i>
+            <i class="fas fa-chalkboard-teacher"> </i> Staff
           </a>
         </li>
         <li>
-          <a href="student.html">
-            <i class="fas fa-users active"> </i>
+          <a href="student.html" class="active">
+            <i class="fas fa-users"> </i> Student
           </a>
         </li>
         <!-- <li>
@@ -51,9 +55,7 @@
           </a>
         </li> -->
         <li>
-          <a href="report.html">
-            <i class="fab fa-readme"> </i>
-          </a>
+          <a href="report.html"> <i class="fab fa-readme"> </i> Report </a>
         </li>
       </ul>
     </nav>
@@ -101,7 +103,9 @@
           </ul>
         </div>
         <div class="dashboard-right bg-secondary">
-          <!-- <h2>Please Enter Student Details</h2> -->
+          <button id="toggle" class="toggle sm-hide">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
           <div class="student">
             <div class="student-btn">
               <button class="btnclick active" data-id="newstu">

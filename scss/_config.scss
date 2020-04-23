@@ -6,6 +6,7 @@ $dark-color: #333;
 $danger-color: #bd1010;
 $success-color: #44aa3a;
 $max-width: 1250px;
+$modal-duration: 1s;
 
 // Set Text Color Based on Background
 @function set-text-color($color) {

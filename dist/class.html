@@ -137,7 +137,9 @@
                         <td>2/10/2018</td>
                         <td>Creche</td>
                         <td>
-                          <button type="submit" class="btn">Promoted</button>
+                          <button type="submit" class="btn" id="open">
+                            Promoted
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -148,7 +150,9 @@
                         <td>2/8/2018</td>
                         <td>Creche</td>
                         <td>
-                          <button type="submit" class="btn">Promoted</button>
+                          <button type="submit" class="btn" id="open">
+                            Promoted
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -159,7 +163,9 @@
                         <td>6/10/2017</td>
                         <td>Nursery</td>
                         <td>
-                          <button type="submit" class="btn">Promoted</button>
+                          <button type="submit" class="btn" id="open">
+                            Promoted
+                          </button>
                         </td>
                       </tr>
                     </tbody>
@@ -182,6 +188,70 @@
                       class="btn mt-1"
                     />
                   </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-container" id="modal">
+            <div class="modal">
+              <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+              </button>
+              <div class="modal-header">
+                <h3>Promotion</h3>
+              </div>
+              <div class="modal-content">
+                <p>Choose the class you want to!</p>
+                <form class="modal-form">
+                  <div>
+                    <label for="surname">Surame</label>
+                    <input
+                      type="text"
+                      id="surname"
+                      placeholder="Enter Surname"
+                      disabled
+                      class="form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="middlename">Middlename</label>
+                    <input
+                      type="text"
+                      id="middlename"
+                      placeholder="Enter Middlename"
+                      disabled
+                      class="form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="lastname">Lastname</label>
+                    <input
+                      type="text"
+                      id="lastname"
+                      placeholder="Enter Lastname"
+                      disabled
+                      class="form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="gender">Gender</label>
+                    <select disabled class="form-input">
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="date_of_birth">Date of Birth</label>
+                    <input type="date" disabled class="form-input" />
+                  </div>
+                  <div>
+                    <label for="class_admitted">Class Promoted To</label>
+                    <select class="form-input">
+                      <option value="creche">Creche</option>
+                      <option value="nursery">Nursery</option>
+                    </select>
+                  </div>
+                  <input type="submit" value="Promote" class="btn" />
                 </form>
               </div>
             </div>

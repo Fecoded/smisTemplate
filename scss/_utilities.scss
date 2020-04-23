@@ -16,6 +16,74 @@
   padding: 20px;
 }
 
+.modal-container {
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &.show-modal {
+    display: block;
+  }
+
+  .modal {
+    background: $light-color;
+    color: set-text-color($light-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    animation: modalopen;
+    animation-duration: $modal-duration;
+
+    .close-btn {
+      background: transparent;
+      color: $light-color;
+      font-size: 25px;
+      border: none;
+      position: absolute;
+      top: 2%;
+      right: 2%;
+      cursor: pointer;
+    }
+
+    &-header {
+      background: $secondary-color;
+      color: $light-color;
+      padding: 15px;
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    &-content {
+      padding: 20px;
+    }
+    &-form {
+      div {
+        margin: 15px 0;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-input {
+        padding: 8px;
+        width: 100%;
+      }
+    }
+  }
+}
+
 .img-round {
   border-radius: 50%;
   padding-top: 5px;
@@ -233,5 +301,15 @@
   }
   &.badge-danger {
     @include set-background($danger-color);
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

@@ -19,21 +19,23 @@
   </head>
   <body>
     <nav class="sm-hide">
+      <div class="logo">
+        <h2>Dashboard</h2>
+        <img src="img/IMG.png" class="img-round" alt="img" />
+      </div>
       <ul>
         <li>
           <a href="index.html">
-            <i class="fas fa-tachometer-alt"> </i>
+            <i class="fas fa-tachometer-alt"> </i> Dashboard
           </a>
         </li>
         <li>
           <a href="staff.html">
-            <i class="fas fa-chalkboard-teacher"> </i>
+            <i class="fas fa-chalkboard-teacher"> </i> Staff
           </a>
         </li>
         <li>
-          <a href="student.html">
-            <i class="fas fa-users"> </i>
-          </a>
+          <a href="student.html"> <i class="fas fa-users"> </i> Student </a>
         </li>
         <!-- <li>
           <a href="parent.html">
@@ -51,8 +53,8 @@
           </a>
         </li> -->
         <li>
-          <a href="report.html">
-            <i class="fab fa-readme active"> </i>
+          <a href="report.html" class="active">
+            <i class="fab fa-readme"> </i> Report
           </a>
         </li>
       </ul>
@@ -101,6 +103,9 @@
           </ul>
         </div>
         <div class="dashboard-right bg-secondary">
+          <button id="toggle" class="toggle sm-hide">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
           <h2>Create Student Report Details</h2>
           <div class="staff">
             <div class="staff-form active">
@@ -157,5 +162,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>

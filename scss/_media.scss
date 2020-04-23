@@ -20,6 +20,14 @@
       h2 {
         font-size: 18px;
       }
+
+      .toggle {
+        background: transparent;
+        color: $light-color;
+        border: none;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
     }
   }
 
@@ -43,19 +51,44 @@
 
   nav {
     background: $dark-color;
-    padding: 2px 2rem;
-    justify-content: center;
+    border-right: 2px solid rgba(200, 200, 200, 0.1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+
+    .logo {
+      padding: 25px;
+      text-align: center;
+      align-items: center;
+    }
 
     ul {
-      display: flex;
-      align-items: center;
+      padding-top: 2rem;
+      line-height: 3;
 
       li a {
+        display: block;
+        padding: 5px 20px;
         color: $light-color;
-        padding: 0 1rem;
 
-        .active {
+        &.active {
+          background: $secondary-color;
+        }
+
+        &:hover {
+          background: $light-color;
           color: $secondary-color;
+        }
+
+        i {
+          padding: 0 10px;
         }
       }
     }
