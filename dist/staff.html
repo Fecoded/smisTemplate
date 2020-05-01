@@ -79,8 +79,8 @@
               <a href="student.html"><i class="fas fa-users"></i> Student</a>
             </li>
             <li>
-              <a href="parent.html"
-                ><i class="fas fa-user-tie"></i> &nbsp;Parent</a
+              <a href="profiles.html"
+                ><i class="fas fa-user-tie"></i> &nbsp;Profiles</a
               >
             </li>
             <li>
@@ -102,119 +102,280 @@
           <button id="toggle" class="toggle sm-hide">
             <i class="fas fa-bars fa-2x"></i>
           </button>
-          <h2>Please Enter Staff Details</h2>
-          <div class="staff">
-            <div class="staff-form active">
-              <form>
-                <div class="form-card">
-                  <div class="form-group">
-                    <label for="surname">Surname</label>
-                    <input type="text" placeholder="Surname" />
+          <div class="student">
+            <div class="student-btn">
+              <button class="btnclick active" data-id="newstu">
+                NEW STAFF
+              </button>
+              <button class="btnclick" data-id="retstu">
+                VIEW STAFF
+              </button>
+            </div>
+
+            <div class="staff">
+              <div class="staff-form active" id="newstu">
+                <form>
+                  <div class="form-card">
+                    <div class="form-group">
+                      <label for="surname">Surname</label>
+                      <input type="text" placeholder="Surname" />
+                    </div>
+                    <div class="form-group">
+                      <label for="middlename">Middle name</label>
+                      <input type="text" placeholder="Middle name" />
+                    </div>
+                    <div class="form-group">
+                      <label for="lastname">Last name</label>
+                      <input type="text" placeholder="Lastname" />
+                    </div>
+                    <div class="form-group">
+                      <label for="gender">Gender</label>
+                      <select>
+                        <option value="male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="middlename">Date of Birth</label>
+                      <input type="date" />
+                    </div>
+                    <div class="form-group">
+                      <label for="houseaddress">House Address</label>
+                      <input type="text" placeholder="House Address" />
+                    </div>
+                    <div class="form-group">
+                      <label for="placeofbirth">Place of Birth</label>
+                      <input type="text" placeholder="Place Of Birth" />
+                    </div>
+                    <div class="form-group">
+                      <label for="religion">Religion</label>
+                      <input type="text" placeholder="Religion" />
+                    </div>
+                    <div class="form-group">
+                      <label for="nationality">Nationality</label>
+                      <input type="text" placeholder="Nationality" />
+                    </div>
+                    <div class="form-group">
+                      <label for="stateoforigin">State of Origin</label>
+                      <input type="text" placeholder="State of Origin" />
+                    </div>
+                    <div class="form-group">
+                      <label for="dateofemployment">Date of Employment</label>
+                      <input type="date" placeholder="Date of Employment" />
+                    </div>
+                    <div class="form-group">
+                      <label for="dateofregistration"
+                        >Date of Registration</label
+                      >
+                      <input type="date" placeholder="Date of Registration" />
+                    </div>
+                    <div class="form-group">
+                      <label for="qualification">Qualification</label>
+                      <input type="text" placeholder="Qualification" />
+                    </div>
+                    <div class="form-group">
+                      <label for="Course of Study">Course of Study</label>
+                      <input type="text" placeholder="Course of Study" />
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="middlename">Middle name</label>
-                    <input type="text" placeholder="Middle name" />
+                  <h2 class="py-1">Next of Kin</h2>
+                  <div class="form-card">
+                    <div class="form-group">
+                      <label for="surname">Surname</label>
+                      <input type="text" placeholder="Surname" />
+                    </div>
+                    <div class="form-group">
+                      <label for="middlename">Middle name</label>
+                      <input type="text" placeholder="Middle name" />
+                    </div>
+                    <div class="form-group">
+                      <label for="lastname">Last name</label>
+                      <input type="text" placeholder="Lastname" />
+                    </div>
+                    <div class="form-group">
+                      <label for="middlename">Gender</label>
+                      <select>
+                        <option value="male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="middlename">Middle name</label>
+                      <input type="text" placeholder="Middle name" />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" placeholder="Email Address" />
+                    </div>
+                    <div class="form-group">
+                      <label for="phonenumber">Phone Number 1</label>
+                      <input type="text" placeholder="Phone Number 1" />
+                    </div>
+                    <div class="form-group">
+                      <label for="phonenumber">Phone Number 2</label>
+                      <input type="text" placeholder="Phone Number 2" />
+                    </div>
+                    <div class="form-group">
+                      <label for="houseaddress">House Address</label>
+                      <input type="text" placeholder="House Address" />
+                    </div>
+                    <div class="form-group">
+                      <label for="relationship">Relationship</label>
+                      <input type="text" placeholder="Relationship" />
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="lastname">Last name</label>
-                    <input type="text" placeholder="Lastname" />
+                  <input type="submit" value="Create Staff" class="btn mt-1" />
+                </form>
+              </div>
+            </div>
+
+            <div class="staff">
+              <div class="staff-form active" id="retstu">
+                <div class="display card">
+                  <div class="dashboard-space pb-1">
+                    <div class="flex">
+                      <input
+                        type="search"
+                        placeholder="Search..."
+                        class="search"
+                      />
+                    </div>
+                    <button class="btn">Export to Excel</button>
                   </div>
-                  <div class="form-group">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Full Name</th>
+                        <th>Gender</th>
+                        <th>House Address</th>
+                        <th>Phone Number</th>
+                        <th>Date of Registration</th>
+                        <th>Date of Employment</th>
+                        <th>Qualification</th>
+                        <th>Course of Study</th>
+                        <th>Operation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>John Doe</td>
+                        <td>Fashion Designer</td>
+                        <td>Johndeo@gmail.com</td>
+                        <td>444-444-4444</td>
+                        <td>444-444-4444</td>
+                        <td>Ikeja, Lagos State, Nigeria</td>
+                        <td>Lekki, Lagos State, Nigeria</td>
+                        <td>Lekki, Lagos State, Nigeria</td>
+                        <td>
+                          <button type="submit" class="btn" id="open">
+                            View
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Sam Smith</td>
+                        <td>Graphic Designer</td>
+                        <td>smithsam@gmail.com</td>
+                        <td>777-777-7777</td>
+                        <td>555-555-555</td>
+                        <td>Benin, Edo State</td>
+                        <td>Benin, Edo State</td>
+                      </tr>
+                      <tr>
+                        <td>Toju Nathaniel</td>
+                        <td>Web Developer</td>
+                        <td>tojuofe@gmail.com</td>
+                        <td>777-777-7777</td>
+                        <td>555-555-555</td>
+                        <td>Benin, Edo State</td>
+                        <td>Benin, Edo State</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-container" id="modal">
+            <div class="modal">
+              <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+              </button>
+              <div class="modal-header">
+                <h3>Staff Details</h3>
+              </div>
+              <div class="modal-content">
+                <form class="modal-form">
+                  <div>
+                    <label for="fullname">Full Name</label>
+                    <input
+                      type="text"
+                      id="surname"
+                      placeholder="Full Name"
+                      disabled
+                      class="form-input"
+                    />
+                  </div>
+                  <div>
                     <label for="gender">Gender</label>
-                    <select>
+                    <select disabled class="form-input">
                       <option value="male">Male</option>
-                      <option value="Female">Female</option>
+                      <option value="female">Female</option>
                     </select>
                   </div>
-                  <div class="form-group">
-                    <label for="middlename">Date of Birth</label>
-                    <input type="date" />
-                  </div>
-                  <div class="form-group">
+                  <div>
                     <label for="houseaddress">House Address</label>
-                    <input type="text" placeholder="House Address" />
+                    <input
+                      type="text"
+                      id="houseaddress"
+                      placeholder="Lastname"
+                      disabled
+                      class="form-input"
+                    />
                   </div>
-                  <div class="form-group">
-                    <label for="placeofbirth">Place of Birth</label>
-                    <input type="text" placeholder="Place Of Birth" />
+                  <div>
+                    <label for="phonenumber">Phone Number</label>
+                    <input
+                      type="text"
+                      id="phonenumber"
+                      placeholder="Phone"
+                      disabled
+                      class="form-input"
+                    />
                   </div>
-                  <div class="form-group">
-                    <label for="religion">Religion</label>
-                    <input type="text" placeholder="Religion" />
+                  <div>
+                    <label for="date_of_registration"
+                      >Date of Registration</label
+                    >
+                    <input type="date" disabled class="form-input" />
                   </div>
-                  <div class="form-group">
-                    <label for="nationality">Nationality</label>
-                    <input type="text" placeholder="Nationality" />
+                  <div>
+                    <label for="date_of_employment">Date of Employment</label>
+                    <input type="date" disabled class="form-input" />
                   </div>
-                  <div class="form-group">
-                    <label for="stateoforigin">State of Origin</label>
-                    <input type="text" placeholder="State of Origin" />
-                  </div>
-                  <div class="form-group">
-                    <label for="dateofemployment">Date of Employment</label>
-                    <input type="date" placeholder="Date of Employment" />
-                  </div>
-                  <div class="form-group">
-                    <label for="dateofregistration">Date of Registration</label>
-                    <input type="date" placeholder="Date of Registration" />
-                  </div>
-                  <div class="form-group">
+                  <div>
                     <label for="qualification">Qualification</label>
-                    <input type="text" placeholder="Qualification" />
+                    <input
+                      type="text"
+                      id="qualification"
+                      placeholder="Qualification"
+                      disabled
+                      class="form-input"
+                    />
                   </div>
-                  <div class="form-group">
-                    <label for="Course of Study">Course of Study</label>
-                    <input type="text" placeholder="Course of Study" />
+                  <div>
+                    <label for="course_of_study">Course of Study</label>
+                    <input
+                      type="text"
+                      id="course_of_study"
+                      placeholder="Course of Study"
+                      disabled
+                      class="form-input"
+                    />
                   </div>
-                </div>
-                <h2 class="py-1">Next of Kin</h2>
-                <div class="form-card">
-                  <div class="form-group">
-                    <label for="surname">Surname</label>
-                    <input type="text" placeholder="Surname" />
-                  </div>
-                  <div class="form-group">
-                    <label for="middlename">Middle name</label>
-                    <input type="text" placeholder="Middle name" />
-                  </div>
-                  <div class="form-group">
-                    <label for="lastname">Last name</label>
-                    <input type="text" placeholder="Lastname" />
-                  </div>
-                  <div class="form-group">
-                    <label for="middlename">Gender</label>
-                    <select>
-                      <option value="male">Male</option>
-                      <option value="Female">Female</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="middlename">Middle name</label>
-                    <input type="text" placeholder="Middle name" />
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Email Address" />
-                  </div>
-                  <div class="form-group">
-                    <label for="phonenumber">Phone Number 1</label>
-                    <input type="text" placeholder="Phone Number 1" />
-                  </div>
-                  <div class="form-group">
-                    <label for="phonenumber">Phone Number 2</label>
-                    <input type="text" placeholder="Phone Number 2" />
-                  </div>
-                  <div class="form-group">
-                    <label for="houseaddress">House Address</label>
-                    <input type="text" placeholder="House Address" />
-                  </div>
-                  <div class="form-group">
-                    <label for="relationship">Relationship</label>
-                    <input type="text" placeholder="Relationship" />
-                  </div>
-                </div>
-                <input type="submit" value="Create Staff" class="btn mt-1" />
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
