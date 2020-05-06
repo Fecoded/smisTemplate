@@ -203,6 +203,17 @@ img {
     &.active {
       display: block;
     }
+    .details {
+      display: flex;
+      margin-bottom: 7px;
+
+      label {
+        font-weight: bold;
+      }
+      p {
+        padding-left: 5px;
+      }
+    }
   }
 }
 
@@ -221,6 +232,13 @@ img {
       font-size: 17px;
       color: $dark-color;
     }
+  }
+}
+
+.operation {
+  display: flex;
+  button {
+    margin: 0 2px;
   }
 }
 

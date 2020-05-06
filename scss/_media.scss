@@ -1,3 +1,50 @@
+@media (max-width: 1300px) {
+  .dashboard {
+    &-right {
+      .student {
+        .table {
+          border: 0;
+
+          thead {
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+          }
+
+          tr {
+            border-bottom: 3px solid #ddd;
+            display: block;
+            margin-bottom: 0.625em;
+          }
+
+          td {
+            border-bottom: 1px solid #ddd;
+            display: block;
+            font-size: 1rem;
+            text-align: right;
+
+            &:last-child {
+              border-bottom: 0;
+            }
+
+            &::before {
+              content: attr(data-label);
+              float: left;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .dashboard {
     display: grid;
@@ -102,6 +149,16 @@
   .staff {
     .form-card {
       grid-template-columns: 1fr;
+    }
+    .flex {
+      input[type='search'] {
+        height: 100%;
+        width: 100%;
+        outline-color: $primary-color;
+      }
+    }
+    .btn {
+      display: none;
     }
   }
 

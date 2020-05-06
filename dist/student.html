@@ -107,12 +107,12 @@
             <i class="fas fa-bars fa-2x"></i>
           </button>
           <div class="student">
-            <div class="student-btn">
+            <div class="student-btn lg-hide">
               <button class="btnclick active" data-id="newstu">
                 NEW STUDENT
               </button>
               <button class="btnclick" data-id="retstu">
-                RETURNING STUDENT
+                VIEW STUDENT
               </button>
             </div>
             <div class="staff">
@@ -225,113 +225,206 @@
               </div>
             </div>
 
-            <!-- Content 2: Returning Student -->
+            <!-- Content 2: Student Information -->
             <div class="staff">
               <div class="staff-form" id="retstu">
-                <form>
-                  <div class="form-card">
-                    <div class="form-group">
-                      <label for="surname">Surname</label>
-                      <input type="text" placeholder="Surname" />
-                    </div>
-                    <div class="form-group">
-                      <label for="firstname">First name</label>
-                      <input type="text" placeholder="First name" />
-                    </div>
-                    <div class="form-group">
-                      <label for="middlename">Middle name</label>
-                      <input type="text" placeholder="Middle name" />
-                    </div>
-                    <div class="form-group">
-                      <label for="middlename">Gender</label>
-                      <select>
-                        <option value="male">Male</option>
-                        <option value="Female">Female</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="middlename">Date of Birth</label>
-                      <input type="date" />
-                    </div>
-                    <div class="form-group">
-                      <label for="houseaddress">House Address</label>
-                      <input type="text" placeholder="House Address" />
-                    </div>
-                    <div class="form-group">
-                      <label for="placeofbirth">Place of Birth</label>
-                      <input type="text" placeholder="Place Of Birth" />
-                    </div>
-                    <div class="form-group">
-                      <label for="religion">Religion</label>
-                      <input type="text" placeholder="Religion" />
-                    </div>
-                    <div class="form-group">
-                      <label for="nationality">Nationality</label>
-                      <input type="text" placeholder="Nationality" />
-                    </div>
-                    <div class="form-group">
-                      <label for="stateoforigin">State of Origin</label>
-                      <input type="text" placeholder="State of Origin" />
-                    </div>
-                    <div class="form-group">
-                      <label for="emergencycontact">Emergency Contact</label>
-                      <input type="text" placeholder="Emergency Contact" />
-                    </div>
-                    <div class="form-group">
-                      <label for="dateofregistration"
-                        >Class admitted into</label
-                      >
-                      <select>
-                        <option value="select">--Select--</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="dateofregistration"
-                        >Date of Registration</label
-                      >
-                      <input type="date" placeholder="Date of Registration" />
-                    </div>
+                <div class="display-card">
+                  <div class="dropdown pb-1">
+                    <select>
+                      <option>All</option>
+                      <option value="Creche">Creche</option>
+                      <option value="Kindergarten">Kindergarten</option>
+                      <option value="Nursery">Nursery</option>
+                    </select>
                   </div>
-                  <h2 class="py-1">Parent / Guardian Information</h2>
-                  <div class="form-card">
-                    <div class="form-group">
-                      <label for="firstname">First name</label>
-                      <input type="text" placeholder="First name" />
-                    </div>
-                    <div class="form-group">
-                      <label for="middlename">Middle name</label>
-                      <input type="text" placeholder="Middle name" />
-                    </div>
-                    <div class="form-group">
-                      <label for="lastname">Last name</label>
-                      <input type="text" placeholder="Last name" />
-                    </div>
-                    <div class="form-group">
-                      <label for="occupation">Occupation</label>
-                      <input type="text" placeholder="Occupation" />
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" placeholder="Email Address" />
-                    </div>
-                    <div class="form-group">
-                      <label for="phonenumber">Phone Number 1</label>
-                      <input type="text" placeholder="Phone Number 1" />
-                    </div>
-                    <div class="form-group">
-                      <label for="phonenumber">Phone Number 2</label>
-                      <input type="text" placeholder="Phone Number 2" />
-                    </div>
-                    <div class="form-group">
-                      <label for="houseaddress">House Address</label>
-                      <input type="text" placeholder="House Address" />
-                    </div>
-                    <div class="form-group">
-                      <label for="workaddress">Work Address</label>
-                      <input type="text" placeholder="Work Address" />
-                    </div>
+                  <div class="details">
+                    <label for="">Teacher's Name: </label>
+                    <p>John Doe</p>
                   </div>
-                  <input type="submit" value="Submit" class="btn mt-1" />
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Firstname</th>
+                        <th>Middlename</th>
+                        <th>Lastname</th>
+                        <th>Gender</th>
+                        <th>Date Of Birth</th>
+                        <th>Class</th>
+                        <th>Operations</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="Firstname">John</td>
+                        <td data-label="Middlename">Doe</td>
+                        <td data-label="Lastname">Williams</td>
+                        <td data-label="Gender">Male</td>
+                        <td data-label="Date of Birth">2/10/2018</td>
+                        <td data-label="Class">Creche</td>
+                        <td data-label="Operations" class="operation">
+                          <button type="submit" class="btn" id="open">
+                            View
+                          </button>
+                          <button type="submit" class="btn" id="open">
+                            Edit
+                          </button>
+                          <button type="submit" class="btn" id="open">
+                            Promote
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-label="Firstname">John</td>
+                        <td data-label="Middlename">Doe</td>
+                        <td data-label="Lastname">Williams</td>
+                        <td data-label="Gender">Male</td>
+                        <td data-label="Date of Birth">2/10/2018</td>
+                        <td data-label="Class">Creche</td>
+                        <td data-label="Operations" class="operation">
+                          <button type="submit" class="btn" id="open">
+                            View
+                          </button>
+                          <button type="submit" class="btn" id="open">
+                            Edit
+                          </button>
+                          <button type="submit" class="btn" id="open">
+                            Promote
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-label="Firstname">John</td>
+                        <td data-label="Middlename">Doe</td>
+                        <td data-label="Lastname">Williams</td>
+                        <td data-label="Gender">Male</td>
+                        <td data-label="Date of Birth">2/10/2018</td>
+                        <td data-label="Class">Creche</td>
+                        <td data-label="Operations" class="operation">
+                          <button type="submit" class="btn" id="open">
+                            View
+                          </button>
+                          <button type="submit" class="btn" id="open">
+                            Edit
+                          </button>
+                          <button type="submit" class="btn" id="open">
+                            Promote
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-container" id="modal-lg">
+            <div class="lgmodal">
+              <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+              </button>
+              <div class="lgmodal-header">
+                <div class="img-cover">
+                  <img src="./img/016.jpg" alt="img" class="profile-img" />
+                </div>
+                <h3>STUDENT PROFILE</h3>
+              </div>
+              <div class="lgmodal-content">
+                <h2>PROFILE DETAILS</h2>
+                <div class="profile">
+                  <div class="details">
+                    <label for="">Names</label>
+                    <p>John Doe</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Gender</label>
+                    <p>Female</p>
+                  </div>
+                  <div class="details">
+                    <label for="">House Address</label>
+                    <p>30 Main Str</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Phone Number</label>
+                    <p>081671630</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Qualification</label>
+                    <p>HND Computer Science</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Course of Study</label>
+                    <p>Computer Science</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Class Assigned To</label>
+                    <p>Creche</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-container" id="modal">
+            <div class="modal">
+              <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+              </button>
+              <div class="modal-header">
+                <h3>Promotion</h3>
+              </div>
+              <div class="modal-content">
+                <p>Choose the class you want to!</p>
+                <form class="modal-form">
+                  <div>
+                    <label for="surname">Surame</label>
+                    <input
+                      type="text"
+                      id="surname"
+                      placeholder="Enter Surname"
+                      disabled
+                      class="form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="middlename">Middlename</label>
+                    <input
+                      type="text"
+                      id="middlename"
+                      placeholder="Enter Middlename"
+                      disabled
+                      class="form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="lastname">Lastname</label>
+                    <input
+                      type="text"
+                      id="lastname"
+                      placeholder="Enter Lastname"
+                      disabled
+                      class="form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="gender">Gender</label>
+                    <select disabled class="form-input">
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="date_of_birth">Date of Birth</label>
+                    <input type="date" disabled class="form-input" />
+                  </div>
+                  <div>
+                    <label for="class_admitted">Class Promoted To</label>
+                    <select class="form-input">
+                      <option value="creche">Creche</option>
+                      <option value="nursery">Nursery</option>
+                    </select>
+                  </div>
+                  <input type="submit" value="Promote" class="btn" />
                 </form>
               </div>
             </div>

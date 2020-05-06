@@ -103,7 +103,7 @@
             <i class="fas fa-bars fa-2x"></i>
           </button>
           <div class="student">
-            <div class="student-btn">
+            <div class="student-btn lg-hide">
               <button class="btnclick active" data-id="newstu">
                 NEW STAFF
               </button>
@@ -131,6 +131,7 @@
                     <div class="form-group">
                       <label for="gender">Gender</label>
                       <select>
+                        <option value="0">* Select</option>
                         <option value="male">Male</option>
                         <option value="Female">Female</option>
                       </select>
@@ -176,6 +177,15 @@
                     <div class="form-group">
                       <label for="Course of Study">Course of Study</label>
                       <input type="text" placeholder="Course of Study" />
+                    </div>
+                    <div class="form-group">
+                      <label for="staff type">Staff Type</label>
+                      <select required>
+                        <option value="0">* Select</option>
+                        <option value="Teaching">Teaching</option>
+                        <option value="Non-Teaching">Non-Teaching</option>
+                        <option value="Both">Both</option>
+                      </select>
                     </div>
                   </div>
                   <h2 class="py-1">Next of Kin</h2>
@@ -245,7 +255,7 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>Full Name</th>
+                        <th>Names</th>
                         <th>Gender</th>
                         <th>House Address</th>
                         <th>Phone Number</th>
@@ -253,42 +263,81 @@
                         <th>Date of Employment</th>
                         <th>Qualification</th>
                         <th>Course of Study</th>
-                        <th>Operation</th>
+                        <th>Operations</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>John Doe</td>
-                        <td>Fashion Designer</td>
-                        <td>Johndeo@gmail.com</td>
-                        <td>444-444-4444</td>
-                        <td>444-444-4444</td>
-                        <td>Ikeja, Lagos State, Nigeria</td>
-                        <td>Lekki, Lagos State, Nigeria</td>
-                        <td>Lekki, Lagos State, Nigeria</td>
-                        <td>
+                        <td data-label="Full Name">John Doe</td>
+                        <td data-label="Gender">Fashion Designer</td>
+                        <td data-label="House Address">Johndeo@gmail.com</td>
+                        <td data-label="Phone Number">444-444-4444</td>
+                        <td data-label="Date of Registration">444-444-4444</td>
+                        <td data-label="Date of Employment">
+                          Ikeja, Lagos State, Nigeria
+                        </td>
+                        <td data-label="Qualification">
+                          Lekki, Lagos State, Nigeria
+                        </td>
+                        <td data-label="Course of Study">
+                          Lekki, Lagos State, Nigeria
+                        </td>
+                        <td data-label="Operations" class="operation">
+                          <button type="submit" class="btn" id="open">
+                            View
+                          </button>
+                          <button type="submit" class="btn" id="open">
+                            Edit
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row" data-label="Full Name">John Doe</td>
+                        <td data-label="Gender">Fashion Designer</td>
+                        <td data-label="House Address">Johndeo@gmail.com</td>
+                        <td data-label="Phone Number">444-444-4444</td>
+                        <td data-label="Date of Registration">444-444-4444</td>
+                        <td data-label="Date of Employment">
+                          Ikeja, Lagos State, Nigeria
+                        </td>
+                        <td data-label="Qualification">
+                          Lekki, Lagos State, Nigeria
+                        </td>
+                        <td data-label="Course of Study">
+                          Lekki, Lagos State, Nigeria
+                        </td>
+                        <td data-label="Operations" class="operation">
+                          <button type="submit" class="btn" id="open">
+                            Edit
+                          </button>
                           <button type="submit" class="btn" id="open">
                             View
                           </button>
                         </td>
                       </tr>
                       <tr>
-                        <td>Sam Smith</td>
-                        <td>Graphic Designer</td>
-                        <td>smithsam@gmail.com</td>
-                        <td>777-777-7777</td>
-                        <td>555-555-555</td>
-                        <td>Benin, Edo State</td>
-                        <td>Benin, Edo State</td>
-                      </tr>
-                      <tr>
-                        <td>Toju Nathaniel</td>
-                        <td>Web Developer</td>
-                        <td>tojuofe@gmail.com</td>
-                        <td>777-777-7777</td>
-                        <td>555-555-555</td>
-                        <td>Benin, Edo State</td>
-                        <td>Benin, Edo State</td>
+                        <td scope="row" data-label="Full Name">John Doe</td>
+                        <td data-label="Gender">Fashion Designer</td>
+                        <td data-label="House Address">Johndeo@gmail.com</td>
+                        <td data-label="Phone Number">444-444-4444</td>
+                        <td data-label="Date of Registration">444-444-4444</td>
+                        <td data-label="Date of Employment">
+                          Ikeja, Lagos State, Nigeria
+                        </td>
+                        <td data-label="Qualification">
+                          Lekki, Lagos State, Nigeria
+                        </td>
+                        <td data-label="Course of Study">
+                          Lekki, Lagos State, Nigeria
+                        </td>
+                        <td data-label="Operations" class="operation">
+                          <button type="submit" class="btn" id="open">
+                            Edit
+                          </button>
+                          <button type="submit" class="btn" id="open">
+                            View
+                          </button>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -375,6 +424,53 @@
                     />
                   </div>
                 </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-container" id="modal-lg">
+            <div class="lgmodal">
+              <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+              </button>
+              <div class="lgmodal-header">
+                <div class="img-cover">
+                  <img src="./img/016.jpg" alt="img" class="profile-img" />
+                </div>
+                <h3>STAFF PROFILE</h3>
+              </div>
+              <div class="lgmodal-content">
+                <h2>PROFILE DETAILS</h2>
+                <div class="profile">
+                  <div class="details">
+                    <label for="">Names</label>
+                    <p>John Doe</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Gender</label>
+                    <p>Female</p>
+                  </div>
+                  <div class="details">
+                    <label for="">House Address</label>
+                    <p>30 Main Str</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Phone Number</label>
+                    <p>081671630</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Qualification</label>
+                    <p>HND Computer Science</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Course of Study</label>
+                    <p>Computer Science</p>
+                  </div>
+                  <div class="details">
+                    <label for="">Class Assigned To</label>
+                    <p>Creche</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

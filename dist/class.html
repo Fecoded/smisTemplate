@@ -105,82 +105,14 @@
           <div class="student">
             <div class="student-btn">
               <button class="btnclick active" data-id="newstu">
-                Student Information
+                CREATE CLASS
               </button>
-              <button class="btnclick" data-id="retstu">Create Class</button>
+              <button class="btnclick" data-id="retstu">ASSIGNCLASS</button>
             </div>
             <div class="staff">
               <div class="staff-form active" id="newstu">
                 <div class="display-card">
-                  <!-- <div class="dropdown pb-1">
-                    <select>
-                      <option name="creche">Creche</option>
-                      <option name="kindergarten">Kindergarten</option>
-                      <option name="nursery">Nursery</option>
-                    </select>
-                  </div> -->
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Firstname</th>
-                        <th>Surname</th>
-                        <th>Middlename</th>
-                        <th>Gender</th>
-                        <th>Date Of Birth</th>
-                        <th>Class</th>
-                        <th>Operation</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>Williams</td>
-                        <td>Male</td>
-                        <td>2/10/2018</td>
-                        <td>Creche</td>
-                        <td>
-                          <button type="submit" class="btn" id="open">
-                            Promoted
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Sarah</td>
-                        <td>Smith</td>
-                        <td></td>
-                        <td>Female</td>
-                        <td>2/8/2018</td>
-                        <td>Creche</td>
-                        <td>
-                          <button type="submit" class="btn" id="open">
-                            Promoted
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Toju</td>
-                        <td>Ofeoritse</td>
-                        <td>Nathaniel</td>
-                        <td>Male</td>
-                        <td>6/10/2017</td>
-                        <td>Nursery</td>
-                        <td>
-                          <button type="submit" class="btn" id="open">
-                            Promoted
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-            <div class="staff">
-              <div class="staff-form" id="retstu">
-                <form>
-                  <div class="display-card">
+                  <form>
                     <div class="form-group">
                       <label for="nameofsubject">Name of Class</label>
                       <input type="text" placeholder="Enter Class..." />
@@ -190,8 +122,98 @@
                       value="Create Class"
                       class="btn mt-1"
                     />
+                  </form>
+
+                  <table class="table-class">
+                    <thead>
+                      <tr>
+                        <th>Class Created</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Creche</td>
+                      </tr>
+                      <tr>
+                        <td>Primary</td>
+                      </tr>
+                      <tr>
+                        <td>Secondary</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="staff">
+              <div class="staff-form" id="retstu">
+                <div class="display-card">
+                  <div class="dashboard-space pb-1">
+                    <div class="flex">
+                      <input
+                        type="search"
+                        placeholder="Search..."
+                        class="search"
+                      />
+                    </div>
+                    <button class="btn">Export to Excel</button>
                   </div>
-                </form>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Names</th>
+                        <th>Gender</th>
+                        <th>Email Address</th>
+                        <th>Qualification</th>
+                        <th>Course of Study</th>
+                        <th>Class Assigned To</th>
+                        <th>Operation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="Full Name">John Doe</td>
+                        <td data-label="Gender">Male</td>
+                        <td data-label="Email Address">Johndeo@gmail.com</td>
+                        <td data-label="Qualification">HND Computer Science</td>
+                        <td data-label="Course of Study">Computer</td>
+                        <td data-label="Class Assigned To">Creche</td>
+                        <td data-label="Operation" class="operation">
+                          <button type="submit" class="btn" id="open">
+                            Assign Class
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-label="Full Name">John Doe</td>
+                        <td data-label="Gender">Male</td>
+                        <td data-label="Email Address">Johndeo@gmail.com</td>
+                        <td data-label="Qualification">HND Computer Science</td>
+                        <td data-label="Course of Study">Computer</td>
+                        <td data-label="Class Assigned To">Creche</td>
+                        <td data-label="Operation" class="operation">
+                          <button type="submit" class="btn" id="open">
+                            Assign Class
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-label="Full Name">John Doe</td>
+                        <td data-label="Gender">Male</td>
+                        <td data-label="Email Address">Johndeo@gmail.com</td>
+                        <td data-label="Qualification">HND Computer Science</td>
+                        <td data-label="Course of Study">Computer</td>
+                        <td data-label="Class Assigned To">Creche</td>
+                        <td data-label="Operation" class="operation">
+                          <button type="submit" class="btn" id="open">
+                            Assign Class
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -202,37 +224,17 @@
                 <i class="fa fa-times"></i>
               </button>
               <div class="modal-header">
-                <h3>Promotion</h3>
+                <h3>Assign Class</h3>
               </div>
               <div class="modal-content">
                 <p>Choose the class you want to!</p>
                 <form class="modal-form">
                   <div>
-                    <label for="surname">Surame</label>
+                    <label for="fullname">Full Names</label>
                     <input
                       type="text"
-                      id="surname"
-                      placeholder="Enter Surname"
-                      disabled
-                      class="form-input"
-                    />
-                  </div>
-                  <div>
-                    <label for="middlename">Middlename</label>
-                    <input
-                      type="text"
-                      id="middlename"
-                      placeholder="Enter Middlename"
-                      disabled
-                      class="form-input"
-                    />
-                  </div>
-                  <div>
-                    <label for="lastname">Lastname</label>
-                    <input
-                      type="text"
-                      id="lastname"
-                      placeholder="Enter Lastname"
+                      id="fullname"
+                      placeholder="Enter Fullname"
                       disabled
                       class="form-input"
                     />
@@ -245,17 +247,33 @@
                     </select>
                   </div>
                   <div>
-                    <label for="date_of_birth">Date of Birth</label>
-                    <input type="date" disabled class="form-input" />
+                    <label for="qulification">Qualification</label>
+                    <input
+                      type="text"
+                      id="Qualification"
+                      placeholder="Qualification"
+                      disabled
+                      class="form-input"
+                    />
                   </div>
                   <div>
-                    <label for="class_admitted">Class Promoted To</label>
+                    <label for="courseofstudy">Course of Study</label>
+                    <input
+                      type="text"
+                      id="courseofstudy"
+                      placeholder="Course of Study"
+                      disabled
+                      class="form-input"
+                    />
+                  </div>
+                  <div>
+                    <label for="class_assigned">Class Assigned To</label>
                     <select class="form-input">
-                      <option value="creche">Creche</option>
-                      <option value="nursery">Nursery</option>
+                      <option value="Creche">Creche</option>
+                      <option value="Nursery">Nursery</option>
                     </select>
                   </div>
-                  <input type="submit" value="Promote" class="btn" />
+                  <input type="submit" value="Submit" class="btn" />
                 </form>
               </div>
             </div>

@@ -3,6 +3,7 @@ let formContent = document.querySelectorAll('.staff-form');
 const close = document.getElementById('close');
 const open = document.getElementById('open');
 const modal = document.getElementById('modal');
+const modal_lg = document.getElementById('modal-lg');
 const toggle = document.getElementById('toggle');
 
 for (let i = 0; i < btnControl.length; i++) {
@@ -26,9 +27,11 @@ toggle.addEventListener('click', () =>
 
 // Show
 open.addEventListener('click', () => modal.classList.add('show-modal'));
+// open.addEventListener('click', () => modal_lg.classList.add('show-modal'));
 
 // Hide
 close.addEventListener('click', () => modal.classList.remove('show-modal'));
+// close.addEventListener('click', () => modal_lg.classList.remove('show-modal'));
 
 // Hide Modal on outside Click
 // window.addEventListener('click', (e) =>
