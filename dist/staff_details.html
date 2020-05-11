@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Profile</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <img src="./img/IMG.png" alt="img" class="logo" />
+      <ul>
+        <li><a href="staff_profile.html">Profile</a></li>
+        <li>
+          <a href="staff_details.html" class="active">View Student/Class</a>
+        </li>
+        <li><a href="staff_report.html">Report</a></li>
+      </ul>
+    </nav>
+    <div class="profile">
+      <div class="staff-details py-1">
+        <label for="">Teacher's Name: </label>
+        <p>John Doe</p>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Middlename</th>
+            <th>Lastname</th>
+            <th>Gender</th>
+            <th>Date Of Birth</th>
+            <th>Class</th>
+            <th>Operations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Firstname">John</td>
+            <td data-label="Middlename">Doe</td>
+            <td data-label="Lastname">Williams</td>
+            <td data-label="Gender">Male</td>
+            <td data-label="Date of Birth">2/10/2018</td>
+            <td data-label="Class">Creche</td>
+            <td data-label="Operations" class="operation">
+              <button type="submit" class="btn" id="open">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Firstname">John</td>
+            <td data-label="Middlename">Doe</td>
+            <td data-label="Lastname">Williams</td>
+            <td data-label="Gender">Male</td>
+            <td data-label="Date of Birth">2/10/2018</td>
+            <td data-label="Class">Creche</td>
+            <td data-label="Operations" class="operation">
+              <button type="submit" class="btn" id="open">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Firstname">John</td>
+            <td data-label="Middlename">Doe</td>
+            <td data-label="Lastname">Williams</td>
+            <td data-label="Gender">Male</td>
+            <td data-label="Date of Birth">2/10/2018</td>
+            <td data-label="Class">Creche</td>
+            <td data-label="Operations" class="operation">
+              <button type="submit" class="btn" id="open">
+                View
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

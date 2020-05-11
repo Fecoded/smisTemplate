@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Profile</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <img src="./img/IMG.png" alt="img" class="logo" />
+      <ul>
+        <li><a href="staff_profile.html">Profile</a></li>
+        <li>
+          <a href="staff_details.html">View Student/Class</a>
+        </li>
+        <li><a href="staff_report.html" class="active">Report</a></li>
+      </ul>
+    </nav>
+    <div class="profile">
+      <div class="profile-card">
+        <h2 class="py-1 text-center">Create Student Report Details</h2>
+        <form>
+          <div class="form-card">
+            <div class="form-group">
+              <label for="term">Term</label>
+              <input type="text" placeholder="Term" />
+            </div>
+            <div class="form-group">
+              <label for="total">Total</label>
+              <input type="text" placeholder="Total" />
+            </div>
+            <div class="form-group">
+              <label for="surname">Name</label>
+              <select>
+                <option value="select">Select</option>
+                <option value="male">John Doe</option>
+                <option value="Female">Sam Smith</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="positionorgrade">Position or Grade</label>
+              <input type="text" placeholder="Total" />
+            </div>
+            <div class="form-group">
+              <label for="middlename">Gender</label>
+              <select>
+                <option value="male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="teacherremark">Teacher Remark</label>
+              <input type="text" placeholder="Teacher Remark" />
+            </div>
+            <div class="form-group">
+              <label for="class">Class</label>
+              <select>
+                <option value="select">Select</option>
+                <option value="male">Creche</option>
+                <option value="Female">Kindergarten</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="headteacherremark">Head Teacher Remark</label>
+              <input type="text" placeholder="Head Teacher Remark" />
+            </div>
+          </div>
+          <input type="submit" value="Create Report" class="btn mt-1" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
