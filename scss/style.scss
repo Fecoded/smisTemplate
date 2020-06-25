@@ -12,7 +12,7 @@ body {
   background: $light-color;
   font-size: 1rem;
   line-height: 1.6;
-  overflow: hidden;
+  // overflow: hidden;
   transition: transform 0.3s ease;
 
   &.show-nav {
@@ -290,7 +290,7 @@ img {
     color: set-text-color($light-color);
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   &-header {
@@ -315,6 +315,8 @@ img {
   &-content {
     padding: 15px;
     background: #eeecec;
+    height: 300px;
+    overflow: auto;
 
     h2 {
       text-align: center;
@@ -346,6 +348,20 @@ img {
   label {
     font-weight: bold;
     padding-right: 5px;
+  }
+}
+.parent {
+  display: flex;
+
+  &-input {
+    input[type='text'] {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 10px 0;
+      outline-color: $secondary-color;
+    }
   }
 }
 

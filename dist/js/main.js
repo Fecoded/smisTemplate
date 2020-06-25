@@ -26,8 +26,8 @@ toggle.addEventListener('click', () =>
 );
 
 // Show
-open.addEventListener('click', () => modal.classList.add('show-modal'));
-// open.addEventListener('click', () => modal_lg.classList.add('show-modal'));
+// open.addEventListener('click', () => modal.classList.add('show-modal'));
+open.addEventListener('click', () => modal_lg.classList.add('show-modal'));
 
 // Hide
 close.addEventListener('click', () => modal.classList.remove('show-modal'));
